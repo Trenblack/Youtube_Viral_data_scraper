@@ -29,7 +29,7 @@ class Scraper:
         self.average_views = self.total_views/self.video_count
 
     def calculate_view_score(self, view):
-        return 0.5*(view/self.average_views) + 0.5*(view/self.subs) #CMYKEAA------------CNAPEAA
+        return 0.5*(view/self.average_views) + 0.5*(view/self.subs)
 
     def get_video_list(self, token="None", start=0):
         if token=="None":
