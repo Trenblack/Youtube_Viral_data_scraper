@@ -1,0 +1,15 @@
+{
+  "name": "yt-viral-data-scraper",
+  "version": "1.0.0",
+  "description": "YT Viral Data Scraper",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "author": "Nemanja Pesic",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
