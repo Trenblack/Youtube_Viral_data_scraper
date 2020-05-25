@@ -3,7 +3,6 @@ import shutil
 from datetime import datetime
 import random
 
-# add a list of keys
 key = []
 
 user_agent_list = [
@@ -105,7 +104,7 @@ class Scrapper:
                     with open(f"{category}/{datetime.now().microsecond}.jpg", "wb") as img:
                         shutil.copyfileobj(image.raw, img)
                     print(
-                        f"{self.count} / {self.videoCount}    ========    completed {int(self.count / self.videoCount) * 100}%")
+                        f"{self.count} / {self.videoCount}    ========    completed {(self.count / self.videoCount) * 100}%")
                     self.count = self.count + 1
                     if self.count == 10000:
                         exit()
